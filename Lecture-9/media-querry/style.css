@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    height: 50vh;
+    width: 50vw;
+    border: 2px solid red;
+    background-color: azure;
+    margin: 20px auto ;
+}
+h1{
+    color: green;
+}
+
+/* @media print and (width:600px) {
+    h1{
+        color: black;
+    }
+} */
+
+/* @media screen and (max-width:700px) {
+    h1{
+        color: black;
+        border: 1px solid black;
+    }
+} */
+/* @media screen and (min-width:700px) {
+    h1{
+        color: black;
+        border: 1px solid black;
+    }
+} */
+
+@media screen and (orientation:landscape) {
+    h1{
+        font-size: 70px;
+    }
+    
+}
+
+/* @media screen and (orientation:portrait) {
+    h1{
+        font-size: 70px;
+        color: pink;
+    }
+    
+} */

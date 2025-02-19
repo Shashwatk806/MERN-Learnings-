@@ -1,0 +1,38 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+}
+
+ /* 1 hover state */
+ div:hover{
+    cursor: pointer;
+    background-color: aqua;
+ }
+
+/* 2 focus state */
+input{
+    background-color: blue;
+    font-size: 50px;
+}
+input:hover{
+    background-color: aqua;
+
+}
+input:focus{
+    background-color: gold;
+    font-size: 80px;
+}
+
+/* 3 Active state */
+
+div:active{
+    background-color: violet;
+    border: 10px solid red;
+}
+
+
+
+
+  

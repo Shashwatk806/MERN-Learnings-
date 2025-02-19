@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+.parent {
+    width: 90vw;
+    height: 90vh;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 200px 300px;
+    grid-template-rows: 50px 100px 60px;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    /* like flex dir grid also have by deafualt dir of row */
+    grid-auto-flow: row;
+}
+
+.child {
+    border: 2px solid black;
+    background-color: lightgreen;
+}
+
+/* #item3{
+    background-color: aqua;
+    grid-column: span 2;
+    grid-row: span 3;
+} */
+
+/* another way */
+#item3 {
+    background-color: aqua;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    /* or  */
+    /* grid-column: 1 / 3;
+    grid-row: 2 / 4; */
+}

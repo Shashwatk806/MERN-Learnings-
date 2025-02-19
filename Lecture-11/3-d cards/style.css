@@ -1,0 +1,54 @@
+div {
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    perspective: 500px;
+}
+
+.side-a {
+    background-color: burlywood;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.side-b {
+    background-color: burlywood;
+    backface-visibility: visible;
+    transform: rotateY(180deg);
+}
+
+.side-a,
+.side-b {
+    position: absolute;
+}
+
+.wrapper {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin: 50px auto;
+    transition-duration: 2s;
+    transform-style: preserve-3d;
+}
+
+.wrapper:hover {
+    transform: rotateY(180deg);
+}
+
+h2 {
+    text-align: center;
+    font-family: cursive;
+}
+
+p {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

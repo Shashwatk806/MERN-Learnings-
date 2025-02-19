@@ -1,0 +1,31 @@
+/* child combinator */
+/* main>section>ul>.pat{
+    color: pink;
+    font-size: 40px;
+} */
+/* section>ul>.pat{
+    color: pink;
+    font-size: 40px;
+} */
+ul>.pat{
+    color: pink;
+    font-size: 40px;
+}
+
+            /* ---- adjacent combinators----- */
+
+            
+                /* only niche wale */
+            /* main article h1 + p{
+                color: blue;
+                font-size: 40px;
+            } */
+
+            /* general sibling -> bahut sare */
+            main article h1 ~ p{
+                color: blue;
+                font-size: 40px;
+            }
+
+
+

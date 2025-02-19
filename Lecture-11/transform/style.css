@@ -1,0 +1,25 @@
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    border: 2px solid black;
+    transition-duration: 2s;
+    margin: 50px auto;
+}
+
+/* div{
+    transform: translateX(200px);
+    transform: translateY(200px);
+    transform: translate(200px , 200px);
+} */
+ div:hover{
+    transform: translate(200px , 200px);
+    transform: rotateX(90deg);
+    transform: rotateY(180deg);
+    transform: scaleX(2);
+    transform: scaleY(2);
+    transform: scale(2,2);
+    transform: skewX(20deg);
+
+}

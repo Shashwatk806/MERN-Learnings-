@@ -1,0 +1,11 @@
+
+:root{
+    --my-font-size-is:50px;
+    --my-color-is:red;
+}
+h1{
+    font-size: var(--my-font-size-is);
+}
+h2{
+    color: var(--my-color-is);
+}

@@ -1,0 +1,33 @@
+/* div {
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    border: 10px solid red;
+    padding: 20px;
+    margin: 50px;
+}
+span{
+    display: inline-block;
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    border: 10px solid red;
+    padding: 20px;
+    margin: 50px;
+} */
+ 
+div {
+    display: inline-block;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}
+
+span {
+    display: inline-block;
+    visibility:visible;
+    background-color: rgb(28, 131, 131);
+    height: 100px;
+    width: 100px;
+
+}

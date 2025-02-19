@@ -1,0 +1,17 @@
+/* rgb way */
+
+h1{
+    color: rgb(123, 52, 5);
+}
+
+/* rgba way */
+h2{
+    color: rgba(200, 50, 20, 0);
+    color: rgba(200, 50, 20, 1);
+    color: rgba(200, 50, 20, 0.5);
+
+}
+
+h3{
+    color: #0b1d6f ;
+}

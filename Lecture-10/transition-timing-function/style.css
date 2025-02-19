@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    transition-duration: 3s;
+}
+
+.parent:hover .child {
+    width: 100vw;
+   
+}
+
+.child1 {
+    background-color: midnightblue;
+    transition-timing-function: linear;
+}
+
+.child2 {
+    background-color: crimson;
+    transition-timing-function: ease-in;
+}
+
+.child3 {
+    background-color: darkmagenta;
+    transition-timing-function: ease-out;
+}
+
+.child4 {
+    background-color: cyan;
+    transition-timing-function: ease-in-out;
+}

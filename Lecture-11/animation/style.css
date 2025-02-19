@@ -1,0 +1,54 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+
+.box:hover {
+    animation-name: something;
+    animation-duration: 3s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    /* animation-direction: reverse; */
+    animation-fill-mode: forwards;
+}
+
+/* way -> 1 */
+/* @keyframes something {
+    from {
+        width: 100px;
+    }
+
+    to {
+        width: 400px;
+    }
+} */
+
+/* way -> 2 */
+@keyframes something {
+    0% {
+        height: 100px;
+        background-color: blueviolet;
+    }
+
+    25% {
+        height: 200px;
+        background-color: chocolate;
+    }
+
+    50% {
+        height: 300px;
+        background-color: crimson;
+    }
+
+    75% {
+        height: 400px;
+        background-color: darkgreen;
+    }
+
+    100% {
+        height: 600px;
+        background-color: blue;
+    }
+}

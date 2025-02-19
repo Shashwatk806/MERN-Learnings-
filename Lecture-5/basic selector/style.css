@@ -1,0 +1,47 @@
+/* element selector */
+h1 {
+    color: aqua;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    background-color: blueviolet;
+}
+
+/* ID selectoor */
+#sam {
+    color: rgb(24, 118, 226);
+    font-size: 50px;
+    text-decoration: line-through;
+    background-color: grey;
+}
+
+/* Class selector */
+.pat {
+    color: crimson;
+    font-size: 30px;
+    text-decoration: underline;
+    background-color: blanchedalmond;
+}
+
+/* attribute */
+a[href="https://www.google.co.in/"] {
+    color: indianred;
+    text-decoration: line-through;
+    font-size: 50px;
+}
+
+input {
+    color: green;
+    font-size: larger;
+}
+
+/* universal selector */
+* {
+    border: 2px solid red;
+}
+
+
