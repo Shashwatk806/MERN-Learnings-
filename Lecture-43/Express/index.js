@@ -27,7 +27,7 @@ app.use((req, res)=>{
 })
 
 app.listen(8080, function(){    // 2 arguements port no , cb function
-    console.log("server connected at port 8080 mst hai")
+    console.log("server connected at port 8080 mst hai");
 })
 
 
