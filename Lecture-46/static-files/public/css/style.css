@@ -1,0 +1,15 @@
+
+h2{
+    font-size: 50px;
+    color: red;
+    border: 2px solid black;
+}
+
+p{
+    background-color: blanchedalmond;
+}
+
+ul{
+    text-decoration: line-through;
+    list-style: none;
+}
