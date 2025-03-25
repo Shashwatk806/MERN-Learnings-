@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit product form</h1>
+    <form action="/products/<%=foundProduct._id%>?_method=PATCH" method="POST">
+        <div>
+            <label for="nam">Product name</label>
+            <input type="text" name="name" id="nam" value="<%=foundProduct.name%>">
+        </div>
+        <div>
+            <label for="pic">Product img</label>
+            <input type="text" name="img" id="pic"  value="<%=foundProduct.img%>">
+        </div>
+        <div>
+            <label for="dam">Product price</label>
+            <input type="text" name="Price" id="dam" value="<%=foundProduct.price%>">
+        </div>
+        <div>
+            <label for="des">Product desc</label>
+            <textarea name="desc" id="des" rows="3"> <%=foundProduct.desc%> </textarea>
+        </div>
+        <button type="submit"> Edit Product</button>
+    </form>
+</body>
+</html>

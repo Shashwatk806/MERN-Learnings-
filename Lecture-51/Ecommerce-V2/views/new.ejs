@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>New product form</h1>
+    <form action="/products" method="POST">
+        <div>
+            <label for="nam">Product name</label>
+            <input type="text" name="name" id="nam">
+        </div>
+        <div>
+            <label for="pic">Product img</label>
+            <input type="text" name="img" id="pic">
+        </div>
+        <div>
+            <label for="dam">Product price</label>
+            <input type="text" name="Price" id="dam">
+        </div>
+        <div>
+            <label for="des">Product desc</label>
+            <textarea name="desc" id="des" rows="3"></textarea>
+        </div>
+        <button type="submit"> Add Product</button>
+    </form>
+</body>
+</html>
