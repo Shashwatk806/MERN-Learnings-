@@ -37,8 +37,9 @@ app.listen(port, ()=>{
 
 //1. Basic Server
 //2. Mongoose connection
-//3. Model > seed data
-//4.
+//3. Model -> seed data
+//4. routes -> views
+
 
 
 
