@@ -14,8 +14,9 @@ const session = require('express-session');
 let configSession = {  
     secret: 'keyboard cat',
     resave: false,
-    saveUninitialized: true,
-    cookie: { secure: true }};
+    saveUninitialized: false,
+    // cookie: { secure: true }
+};
 
 mongoose.connect("mongodb://127.0.0.1:27017/myDB")// returns a promise
 .then(()=>{
