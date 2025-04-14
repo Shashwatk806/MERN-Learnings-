@@ -20,7 +20,7 @@ router.post('/products/:id/rating',validateReview ,async (req,res)=>{
         await review.save();
 
         //adding flash messages
-        req.flash('msg', 'Review added successfully');
+        req.flash('success', 'Review added successfully');
         
         res.redirect(`/products/${id}`)
     }

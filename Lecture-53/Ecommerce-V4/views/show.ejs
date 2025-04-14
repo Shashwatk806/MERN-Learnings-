@@ -10,12 +10,8 @@
 </head>
 <body>
 
-    <div class="alert alert-success" role="alert">
-       <% if(msg && msg.length){ %>
-            <%= msg %>
-      <% } %>
-      
-      </div>
+    <%-include('./flash')%>
+
 
     <h1>Showing particular product</h1>
 

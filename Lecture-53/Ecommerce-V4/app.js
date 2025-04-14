@@ -40,6 +40,12 @@ app.use(methodOverride('_method'))
 app.use(session(configSession));
 app.use(flash());
 
+//adding locals for flash msgs
+app.use( (req,res,next)=>{
+    res.locals.success = req.flash('success');
+    res.locals.error = req.flash('error');
+    next();
+} )
 
 // so that hr ek incoming req pe jaye
 app.use(productRoutes);
