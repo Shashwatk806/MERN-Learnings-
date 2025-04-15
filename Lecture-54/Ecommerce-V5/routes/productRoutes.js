@@ -1,10 +1,10 @@
 
 const express =  require('express');
 // const Joi = require('joi');
-const Product = require('../models/product');
+const Product = require('../models/Product');
 const router = express.Router();
 const {validateProduct} =  require('../middleware');
-const Review = require('../models/review');
+const Review = require('../models/Review');
 
 // displaying all the products
 router.get('/products' , async(req,res)=>{

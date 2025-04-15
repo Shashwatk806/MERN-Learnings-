@@ -9,10 +9,14 @@ const methodOverride  = require('method-override');
 const reviewRoutes = require("./routes/review");
 const session = require('express-session');
 const flash = require('connect-flash');
+const authRoutes = require('./routes/auth');
+const passport = require('passport'); //pass
+const LocalStrategy = require('passport-local'); //pass
+const User = require('./models/User'); //pass
 
 
 mongoose.set('strictQuery', true);
-mongoose.connect('mongodb://127.0.0.1:27017/julybatch')
+mongoose.connect('mongodb://127.0.0.1:27017/myDB')
 .then(()=>{console.log("DB connected")})
 .catch((err)=>{console.log(err)})
  
@@ -36,6 +40,16 @@ let configSession = {
 app.use(session(configSession));
 app.use(flash());
 
+// use static serialize and deserialize of model for passport session support
+app.use(passport.initialize()); //pass
+app.use(passport.session()); //pass
+
+passport.serializeUser(User.serializeUser()); //pass
+passport.deserializeUser(User.deserializeUser()); // pass
+
+// use static authenticate method of model in LocalStrategy
+passport.use(new LocalStrategy(User.authenticate())); //pass
+
 app.use((req,res,next)=>{
     res.locals.success = req.flash('success');
     res.locals.error = req.flash('error');
@@ -45,6 +59,7 @@ app.use((req,res,next)=>{
 // Routes
 app.use(productRoutes);
 app.use(reviewRoutes);
+app.use(authRoutes);
 
 const port = 8080;
 app.listen(port,()=>{
