@@ -107,10 +107,14 @@
     opacity: 1;
   }
   
+  .starability-basic {
+    display: flex;
+}
+
   .starability-basic > label {
     position: relative;
     display: inline-block;
-    float: left;
+    /* float: left; */
     width: 30px;
     height: 30px;
     font-size: 0.1em;
