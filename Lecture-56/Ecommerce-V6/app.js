@@ -10,9 +10,11 @@ const reviewRoutes = require("./routes/review");
 const session = require('express-session');
 const flash = require('connect-flash');
 const authRoutes = require('./routes/auth');
+const productApi = require("./routes/api/productapi"); //api
 const passport = require('passport'); //pass
 const LocalStrategy = require('passport-local'); //pass
 const User = require('./models/User'); //pass
+
 
 
 mongoose.set('strictQuery', true);
@@ -66,6 +68,8 @@ app.use((req,res,next)=>{
 app.use(productRoutes);
 app.use(reviewRoutes);
 app.use(authRoutes);
+app.use(productApi);
+
 
 const port = 8080;
 app.listen(port,()=>{
