@@ -17,7 +17,9 @@
                   <h3 class="card-title"> <%= item.name %> </h3>
                   <h5 class="card-title"> Rs: <%= item.price %> </h5>
                   <p class="card-text"> <%= item.desc %> </p>
-                  <span class="btn like-btn"><i class="fa-regular fa-heart"></i></span>
+                  <span class="btn like-btn" product-id="<%= item._id %>">
+                    <i class="fa-regular fa-heart"></i>
+                </span>
                   <p class="card-text"> <%= item.instock %> </p>
                   <a href="/products/<%=item._id%>" class="btn btnn btn-primary">View Product</a>
                 </div>
