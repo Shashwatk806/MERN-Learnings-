@@ -24,7 +24,11 @@ router.post('/product/:productId/add',isLoggedIn, async (req,res)=>{
     res.redirect('/user/cart');
 })
 
+//for payment
 
+router.get('./checkout', (req,res)=>{
+    
+})
 
 
 module.exports = router;
