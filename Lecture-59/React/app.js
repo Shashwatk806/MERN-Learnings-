@@ -41,10 +41,27 @@
 // root.render([h1,h2]);
 
 //-----------------------------------------------
+//nested
 
-``
+// let rootEl =document.getElementById('root');
+// let div = React.createElement('div', null,
+//      [React.createElement('h1',null, 'hi I am h1 in div'),
+//         React.createElement('p',null,'hi I am p in div')
+//  ]);
 
+// let root = ReactDOM.createRoot(rootEl);
+// root.render(div)
 
+// ------------------------------------------------
+// JSX way
 
+let rootEl= document.getElementById('root');
+let div = (
+    <div>
+        <h1>Hi i am inside h1 of JSX</h1>
+        <p>Hi i am inside p of JSX </p>
+    </div>
+);
 
-
+let root = ReactDOM.createRoot(rootEl);
+root.render(div);
