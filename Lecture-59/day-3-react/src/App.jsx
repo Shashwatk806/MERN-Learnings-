@@ -1,3 +1,4 @@
+import Bhai from "./Components/Bhai";
 import Hello from "./Components/Hello";
 import Homie from "./Components/Homie";
 import Sam from "./Components/sam"
@@ -10,10 +11,11 @@ function App(){
   // lower part ->expressions -> map,ternary-> where we return and it always return in jsx type
   return ( 
     <div>
-      <Homie />
-      <Sam />
+      <Bhai />
+      {/* <Homie /> */}
+      {/* <Sam /> */}
       {/* <sam></sam> */}
-      <Hello />
+      {/* <Hello /> */}
       {/* <div>
     <h1>Hello from react-app</h1>
     </div> 
