@@ -30,4 +30,4 @@ let Demo = memo(function ({b}){
     )
 })
 
-export default Call
+export default Call;
