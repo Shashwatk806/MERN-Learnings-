@@ -17,11 +17,18 @@ router.get('/allquotes',async (req,res)=>{
 router.post('/newquote',async (req,res)=>{
    try{
     let {author,text} = req.body;
-    await Quotes.create({author,text})
+    let newQuote = await Quotes.create({author,text})
+    // console.log(newQuote,"newQuote");
+    
     res.status(201).json({msg:"new quote created successfully"})
    }catch(e){
     res.status(400).json({msg:"something went wrong."})
 }
+})
+
+router.get('/quotes/:id', async (req,res)=>{
+  let quoteId = await Quotes.findById(req.params.id);
+  res.status(200).json(quoteId);
 })
 
 

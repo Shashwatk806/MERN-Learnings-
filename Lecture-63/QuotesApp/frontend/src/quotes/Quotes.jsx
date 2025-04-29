@@ -1,8 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Quotes(props) {
-  function showQuoteHandler() {
-    console.log("View full quote clicked!");
+  let navigate = useNavigate();
+
+  function showQuoteHandler(id) {
+
+    // console.log("View full quote clicked!");
+    navigate(`/quotes/${id}`)
   }
   return (
     <div>
@@ -11,7 +16,7 @@ function Quotes(props) {
                 <h1>Author: {props.author}</h1>
                 <h3>Text: {props.text}</h3>
             </span>
-            <button onClick={showQuoteHandler}>View in full page</button>
+            <button onClick={()=>showQuoteHandler(props.id)}>View full Quote</button>
         </li>
     </div>
   )

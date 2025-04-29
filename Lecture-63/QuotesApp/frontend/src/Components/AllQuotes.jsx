@@ -20,7 +20,7 @@ function AllQuotes() {
     <div>All quotes
       <ul>
         {quotes.map((quote,index)=>{
-          return (<Quotes key={quote._id} author={quote.author} text={quote .text}/>)
+          return (<Quotes id={quote._id} key={index} author={quote.author} text={quote .text}/>)
         })}
       </ul>
     </div>
