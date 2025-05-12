@@ -1,6 +1,21 @@
-
-.box > p{
-    color: blue;
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
+.wrapper{
+    position: relative;
+    margin: 10% auto;
+    width: 350px;
+    height: 400px;
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.part1{
+    height: 30%;
+    background-color: rgb(15, 116, 248);
+    border-radius: 8px 8px 0 0;
+}
 
