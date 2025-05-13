@@ -48,7 +48,7 @@ body {
 /* fixed works acc to body in any condition */
 /* #fixed #middle {
     position: fixed;
-    top: 100px;
+    top: 100px; 
 } */
 
 #sticky{
