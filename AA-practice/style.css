@@ -1,10 +1,25 @@
-
-div{
-    width: 300px;
-    height: 300px;
-    background-color: aqua;
-    border: 1px solid black;
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
+.navbar{
+    width: 100vw;
+    height: 60px;
+    background-color:chocolate;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0px 20px;
+}
 
+.inner-nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content:space-evenly;
+}
+
+.btn{
+    padding: 2px 15px;
+}
 
