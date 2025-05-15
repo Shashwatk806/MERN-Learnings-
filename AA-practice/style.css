@@ -22,7 +22,6 @@
 .inner-navlink {
     color: rgb(100, 22, 61);
     text-decoration: none;
-    font-size: 1.1rem;
 }
 
 .navlink{
@@ -37,3 +36,4 @@
     padding: 4px 14px;
     border-radius: 20px;
 }
+
