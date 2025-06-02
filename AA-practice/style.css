@@ -1,7 +1,10 @@
+
+
 *{
     margin: 0px;
     padding: 0px;
 }
+
 
 .navbar{
     width: 100;
@@ -12,6 +15,8 @@
     align-items: center;
     padding: 0px 20px;
 }
+
+
 
 .inner-nav{
     display: flex;
