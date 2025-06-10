@@ -1,8 +1,14 @@
 
-// XHR request 
-let xhr = new XMLHttpRequest();
-xhr.open('get','https://api.tvmaze.com/search/shows?q=girls')
-xhr.onload = function(){
+ let car = {
+    name : "bmw",
+    price : 150
+ }
+
+//  let {price,name} = car;
+//  console.log(price);
+ let{name:chngedname = "samkicar",price} = car;
+//  console.log(name);
+ console.log(chngedname);
  
-}
-xhr.send();
+ 
+ 
