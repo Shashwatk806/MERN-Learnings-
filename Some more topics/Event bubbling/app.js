@@ -17,6 +17,11 @@ btn.addEventListener('click', ()=>{
 })
 
 // to prevent bubbling 
-innerDiv.addEventListener('click', (e)=>{
-    e.stopPropagation();
-})  
+// innerDiv.addEventListener('click', (e)=>{
+//     e.stopPropagation();
+// }) 
+
+// Event Capturing
+ outerDiv.addEventListener('click', ()=>{
+    console.log('outer clicked');
+},{capture:true})
