@@ -1,42 +1,28 @@
 
-let input = document.querySelector('input');
-let btn = document.querySelector('button');
-let list = document.querySelector('#list');
-
-btn.addEventListener('click', function(){
-    let searchText = input.value;
-    fetchMovie(searchText);
-    input.value = "";
-})
-
-function fetchMovie(searchText){
-    fetch(`https://api.tvmaze.com/search/shows?q=${searchText}`)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
-        // console.log(data);
-        showMovie(data)
-    })
-    .catch(function(err){
-        console.log(err);
-        
-    })
-}
-
-function showMovie(alldata){
-    while(list.firstChild){
-        list.firstChild.remove();
+//throttling
+function throttle(fn,delay){
+    let lastCall = 0;
+    return function(...args){
+        const now = Date.now();
+        if(now - lastCall < delay){
+            return;
+        }
+        lastCall = now;
+        return fn(...args);
     }
-    alldata.forEach(element => {
-          let fig = document.createElement('figure');
-            fig.innerHTML = `
-            <img src = ${element.show.image.medium} />
-            <h2> Name: ${element.show.name} </h2>
-            <h3> type : ${element.show.type} </h3>
-            <h5> Language: ${element.show.language} </h5>
-    `
-    list.appendChild(fig)
-    });
-
 }
+
+function sendMsg(msg){
+    console.log(`sending messsage ${msg}`);
+}
+
+const sendMsgWithThrottle = throttle(sendMsg,200);
+
+// sendMsgWithThrottle('hi');
+// sendMsgWithThrottle('hi my name');
+// sendMsgWithThrottle('hi my name is khan')
+
+sendMsgWithThrottle('hi',0);
+sendMsgWithThrottle('hi my name is',100);
+sendMsgWithThrottle('hi my name is Prince',300);
+sendMsgWithThrottle('hi my name is Prince, Welcome to the world',500)
