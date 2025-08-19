@@ -1,0 +1,4 @@
+*.css linguist-detectable=false
+node_modules/* linguist-vendored
+dist/* linguist-generated
+build/* linguist-generated
